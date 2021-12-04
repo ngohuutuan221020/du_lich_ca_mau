@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50px;
+    }
+    
+    #myBtn:hover {
+      background-color: blue;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://batdongsanexpress.vn/fonts/Averta-Black.ttf" as="font" crossorigin>
+    <link rel="preload" href="https://batdongsanexpress.vn/fonts/Averta-Regular.ttf" as="font" crossorigin>
+    <meta name='dmca-site-verification' content='dDFNaDY0NXpjS2V6cVNBaVd0QndweDBaT1lZa3FHbFJVWml6cE5aOFdNMD01' />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="google-site-verification" content="PpF4jmKFNUWW4wlml_rkcTa1MwOS-NK2c8rLmow2Wqg" />
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#004395" />
+    <!-- <base href="https://batdongsanexpress.vn/" /> -->
+    <title>DU LỊCH CÀ MAU</title>
+    <link rel="shortcut icon" href="./assets/logo/Logo-CMT-2.ico" type="image/x-icon" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="hwp.com.vn" />
+    <meta name="description"
+        content="Công Ty Cổ Phần BẤT ĐỘNG SẢN EXPRESS là đơn vị (Sàn) tư vấn và môi giới bất động sản uy tín chuyên nghiệp tại Thành Phố Hồ Chí Minh (TP.HCM) và Việt Nam, Sàn BDS EXPRESS chuyên phân phối và bán các dự án tại Việt Nam như căn hộ chung cư, nhà phố, biệt thự, shophouse." />
+    <meta name="keywords" content="BẤT ĐỘNG SẢN EXPRESS " />
+    <link rel="canonical" href="https://batdongsanexpress.vn/" />
+    <meta property="og:title" content="Công Ty CP Bất Động Sản Express | Đơn vị tư vấn chuyên nghiệp" />
+    <meta property="og:url" content="https://batdongsanexpress.vn/" />
+    <meta property="og:site_name" content="BATDONGSANEXPRESS.VN" />
+    <meta property="og:rich_attachment" content="true" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Công Ty Cổ Phần BẤT ĐỘNG SẢN EXPRESS là đơn vị (Sàn) tư vấn và môi giới bất động sản uy tín chuyên nghiệp tại Thành Phố Hồ Chí Minh (TP.HCM) và Việt Nam, Sàn BDS EXPRESS chuyên phân phối và bán các dự án tại Việt Nam như căn hộ chung cư, nhà phố, biệt thự, shophouse." />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=5.0" />
+    <link rel='dns-prefetch' href='//youtube.com' />
+    <link rel='dns-prefetch' href='//facebook.com' />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//www.googleadservices.com' />
+    <link rel='dns-prefetch' href='https://www.google-analytics.com/' />
+    <link rel="canonical" href="https://batdongsanexpress.vn/" />
+    <link rel="alternate" href="https://batdongsanexpress.vn/" hreflang="vi-vn" />
+    <link rel="stylesheet" href="https://batdongsanexpress.vn/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://batdongsanexpress.vn/css/style.css" />
+    <link rel="stylesheet" href="https://batdongsanexpress.vn/css/hwp.com.vn.css" /> <noscript id="deferred-styles">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://batdongsanexpress.vn/css/core.css" />
+        <link rel="stylesheet" type="text/css" href="https://batdongsanexpress.vn/css/responsive.css.css" />
+        <link rel="stylesheet" type="text/css" href="https://batdongsanexpress.vn/css/responsive_hwp.css" />
+    </noscript>
+    <script>var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles"); var replacement = document.createElement("div"); replacement.innerHTML = addStylesNode.textContent; document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        }; var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame; if (raf)
+            raf(function () { window.setTimeout(loadDeferredStyles, 0); }); else
+            window.addEventListener('load', loadDeferredStyles);</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-945380171"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-945380171');</script>
+    <script>gtag('event', 'page_view', {
+            'send_to': 'AW-945380171', 'user_id': 'replace with value'
+        });</script>
+    <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization",
+        "name": "Công Ty CP Bất Động Sản Express","alternateName": "Bất Động Sản Express","url": "https://batdongsanexpress.vn","logo": "https://batdongsanexpress.vn/images/logo.png","contactPoint": {"@type": "ContactPoint","telephone": "0886 68 68 98","contactType": "","areaServed": "VN","availableLanguage": ["Vietnamese","en"]},"sameAs": ["https://www.linkedin.com/in/bdsexpressvn","https://www.pinterest.com/bdsexpressvn","https://bdsexpressvn.tumblr.com","https://www.reddit.com/user/bdsexpressvn","https://www.youtube.com/channel/UCNnhnuEeitTc3e98Odzc5lA","https://bdsexpress-vn.blogspot.com","https://www.blogger.com/profile/02890252663795119491","https://trello.com/bdsexpressvn","https://getpocket.com/@bdsexpressvn","https://www.diigo.com/profile/bdsexpressvn","https://www.instapaper.com/p/bdsexpressvn","https://bdsexpressvn.wordpress.com","https://flickr.com/people/bdsexpressvn","https://soundcloud.com/bdsexpressvn","https://issuu.com/bdsexpressvn","https://medium.com/@bdsexpressvn1","https://myspace.com/bdsexpressvn","https://www.behance.net/bdsexpressvn","https://vi.gravatar.com/bdsexpressvn","https://wordpress.org/support/users/bdsexpressvn","https://profiles.wordpress.org/bdsexpressvn","https://profile.hatena.ne.jp/bdsexpressvn/profile","https://bdsexpressvn.hatenablog.com","https://www.openstreetmap.org/user/BatDongSanExpress","https://dribbble.com/bdsexpressvn","https://www.imdb.com/user/ur12525575","https://buddypress.org/members/bdsexpressvn/profile","https://gitlab.com/bdsexpressvn","https://www.goodreads.com/bdsexpressvn","https://500px.com/p/bdsexpressvn","https://www.mixcloud.com/bdsexpressvn","https://www.deviantart.com/bdsexpressvn","https://about.me/bdsexpressvn","https://mix.com/bdsexpressvn","https://gumroad.com/bdsexpressvn","https://scholar.google.com/citations?hl=vi&user=5DeyMYgAAAAJ","https://www.producthunt.com/@bdsexpressvn","https://bdsexpressvn.mystrikingly.com","https://www.last.fm/user/bdsexpressvn","https://sketchfab.com/bdsexpressvn","https://slashdot.org/~bdsexpressvn","https://www.scoop.it/u/bdsexpressvn","https://bdsexpressvn.livejournal.com/profile","https://devpost.com/bdsexpressvn02","https://ello.co/bdsexpressvn","https://mastodon.social/@bdsexpressvn","https://www.plurk.com/bdsexpressvn","https://www.vingle.net/bdsexpressvn","https://www.intensedebate.com/profiles/bdsexpressvn","https://linkhay.com/u/bdsexpressvn","http://www.folkd.com/user/bdsexpressvn","https://dashburst.com/bdsexpressvn","https://www.pearltrees.com/bdsexpressvn","https://gab.com/bdsexpressvn","https://bdsexpressvn.doodlekit.com","https://flipboard.com/@bdsexpressvn","https://vimeo.com/bdsexpressvn","https://www.xing.com/profile/BatDong_San","https://www.etsy.com/people/1asffs2c7dmvnxrm","https://foursquare.com/user/594590785","https://digg.com/@bat-dong-san-express","https://www.kickstarter.com/profile/bdsexpressvn","https://disqus.com/by/bdsexpressvn","https://www.buzzfeed.com/bdsexpressvn","https://anchor.fm/bdsexpressvn1","https://www.indiegogo.com/individuals/24940786","https://weheartit.com/bdsexpressvn","https://angel.co/u/bdsexpressvn","https://drive.google.com/drive/folders/1vyhbx5dPLSipjeRO26m2Jgr5F-BCkKq7","https://docs.google.com/spreadsheets/d/1qa9M9rXtoeK8ky4WMZJr6gX6ZzFE9PQ3N8GP4CtWbaQ/edit","https://docs.google.com/document/d/11kLZ7t_OYlR125p6lKW5LneIpKYbfo_WY-tlp5oxFEw/edit","https://docs.google.com/presentation/d/1wa4VAGskjbSLd6RMaDwT2sVU6WUhd8Lsh6rL0tY4MX0/edit","https://docs.google.com/forms/d/e/1FAIpQLSffoab7hnqJv4XEXxdsPdyoJQWC5Mnd0z9MJvQ5yrcMLKR96A/viewform","https://docs.google.com/drawings/d/1BQtnnyQ3_WAJZY4unXpU_GWLM1diOv3xRlqxE7CjR_U/edit","https://www.google.com/maps/d/edit?mid=1UD3VOzBI5EMO_hxSfhC-DP4KMNo3MCb3","https://sites.google.com/view/bdsexpress-vn"]}
+
+    </script>
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PVH4JRG');
+    </script>
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MH8GFXZ');
+    </script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/jquery-1.12.0.min.js"></script>
+</head>
+
+<body> 
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH8GFXZ" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PVH4JRG" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <div class="wrapper white_bg">
+        <header class="header header-2 sticky-header" style="background-color: #152b75; font-family: 'Quicksand', sans-serif;">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="logo"> <a href="./index.html"><img class="lazy" width="128"
+                                        height="100"
+                                        src="./assets/logo/Logo CMT.png"
+                                        alt="Bất Động Sản Express" /></a> 
+                            </div>
+                        </div>
+                        <div class="col-md-10 hidden-sm hidden-xs">
+                            <div class="menu-top"> 
+                                <a href="https://www.facebook.com/DuLichCaMau" 
+                                    class="fa fa-facebook" style="margin-right: 1rem;"></a>
+                                <a href="https://twitter.com/meobalovn/status/1249566320640708609"
+                                    class="fa fa-twitter" style="margin-right: 1rem;"></a>
+                                <a href="https://www.youtube.com/channel/UCNmw6IShg_7knVBYTwGqaUw" 
+                                    class="fa fa-youtube" style="margin-right: 1rem;"></a>
+                                <a href="https://www.instagram.com/explore/locations/1015198909/du-lich-ca-mau/" 
+                                    class="fa fa-instagram" style="margin-right: 1rem;"></a>
+                            </div>
+                            <div class="mgea-full-width">
+                                <div class="header-menu" >
+                                    <nav >
+                                        <ul>
+                                            <li><a href="./index.html" style=" font-size: 1.3em;" >Trang chủ</a>
+                                            </li>
+                                            <li> 
+                                                <a href="./about.html" target="_block" style=" font-size: 1.3em;">Giới thiệu</a>
+                                                <ul class="dropdown_menu">
+                                                    <li><a href="https://ngohuutuan221020.github.io/websitegithub/" target="_block">
+                                                            Ngô Hữu Tuấn</a>
+                                                    </li>
+                                                    <li><a href="https://quanbdu.github.io/QuanBDUKute/" target="_block">
+                                                            Nguyễn Quân</a>
+                                                    </li>
+                                                    <li><a href="https://tmt3599.github.io/cv-tmt3599/" target="_block">
+                                                            Trần Minh Tấn</a>
+                                                    </li>
+                                                    <li><a href="https://nguyenvuluan102.github.io/CV01/CV" target="_block">
+                                                            Nguyễn Vũ Luân</a>
+                                                    </li>
+                                                    <li><a href="https://huynhvukha.github.io/" target="_block">
+                                                            Huỳnh Vủ Kha</a>
+                                                    </li>
+                                                    <li><a href="https://sephirothcm123.github.io/trunghieucm01/cv/cvlth" target="_block">
+                                                            Lê Trung Hiếu</a>
+                                                    </li>
+                                                    <li><a href="https://pham-phi.github.io/PhamTranChauPhi/" target="_block">
+                                                            Phạm Trần Châu Phi</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li><a href="./contact.html" target="_block" style=" font-size: 1.3em;">Liên hệ</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area hidden-lg hidden-md">
+                <div class="container">
+                    <div class="col-md-12">
+                        <nav id="dropdown">
+                            <ul style="display: none;" >
+                                <li><a href="./index.html" target="_block">Trang chủ</a>
+                                </li>
+                                <li> 
+                                    <a href="./about.html" target="_block">Giới thiệu</a>
+                                    <ul class="dropdown_menu">
+                                        <li><a href="https://ngohuutuan221020.github.io/websitegithub/" target="_block">
+                                                Ngô Hữu Tuấn</a>
+                                        </li>
+                                        <li><a href="https://quanbdu.github.io/QuanBDUKute/" target="_block">
+                                                Nguyễn Quân</a>
+                                        </li>
+                                        <li><a href="https://tmt3599.github.io/cv-tmt3599/" target="_block">
+                                                Trần Minh Tấn</a>
+                                        </li>
+                                        <li><a href="https://nguyenvuluan102.github.io/CV01/CV" target="_block">
+                                                Nguyễn Vũ Luân</a>
+                                        </li>
+                                        <li><a href="https://huynhvukha.github.io/" target="_block">
+                                                Huỳnh Vủ Kha</a>
+                                        </li>
+                                        <li><a href="https://sephirothcm123.github.io/lehieu/cv/cvlth" target="_block">
+                                                Lê Trung Hiếu</a>
+                                        </li>
+                                        <li><a href="https://pham-phi.github.io/PhamTranChauPhi/" target="_block">
+                                                Phạm Trần Châu Phi</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html" target="_block">Liên hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="welcome-fixed-area overlay"
+            style="background: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/C%C3%A0_Mau_city_center.jpg')no-repeat scroll center center / cover;">
+            <div class="display-table">
+                <div class="display-tablecell">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="slide1-text">
+                                    <div class="middle-text">
+                                        <div class="title-page title-1"> CHÀO MỪNG BẠN ĐẾN VỚI </div>
+                                        <div class="title-page title-2" style="font-size: 4em;">
+                                            <div><span >CÀ MAU </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down show"></div>
+        </div>
+        <div id="CRintro_home" class="scroll_destination CRdef_line_group pb-60">
+            <div class="container">
+                <div id="CRintro_home_top" class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <div class="CRintro_home_left">
+                            <h1 class="CRdef_line_title">TỔNG QUAN DU LỊCH CÀ MAU</h1>
+                            <p class="des">Cà Mau, là tỉnh cực Nam, là điểm chấm cuối cùng trên bản đồ Việt Nam. </p>
+                            <p style="text-align: justify;"><span style="color: blue; font-size: 2em;">Du lịch Cà Mau</span> vốn không dễ dàng, bởi chúng không giống bất cứ một thành phố du lịch nào khác. 
+                                 Đi Cà Mau chủ yếu là khám phá, là len lỏi trong những kênh rạch để trải nghiệm cuộc sống của người dân, 
+                                 là tìm một chốn nào đó để ăn đặc sản. Tất nhiên, để không phải bị” bơ vơ” 
+                                 ở một miền quê sông nước thì những kinh nghiệm du lịch Cà Mau là cần thiết cho tất cả mọi người.<br>Nơi cứ 10 người lại có đến 9 người muốn ghé đến trong chuyến hành trình khám phá miền Tây. 
+                                 Có lẽ nào đó, cứ mỗi khi nhắc đến hai chữ Cà Mau – không chỉ riêng mình mà tất cả mọi người.
+                                  Dù là ai đi chăng nữa đều muốn một lần được đặt chân đến vùng đất Mũi thiêng liêng này.</p><a class="btn-style btn_hook dark"
+                                href="https://dulichkhampha24.com/kinh-nghiem-du-lich-ca-mau.html">Chi tiết<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-4">
+                        <div class="CRintro_home_right"> <img width="555" height="370" class="lazy"
+                                src="https://dulichkhampha24.com/wp-content/uploads/2019/10/du-lich-ca-mau.jpg"
+                                alt="bat dong san express" /> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section item-content" id="vitri">
+            <div class="container">
+                <div class="section-label">
+                    <div class="header-title">
+                        <h2 style="text-align: center; padding-bottom: 20px;" ><span class="sub_title">ĐỊA ĐIỂM DU LỊCH CÀ MAU TUYỆT ĐẸP NHẤT ĐỊNH PHẢI ĐẾN</span></h2>
+                    </div>
+                </div>
+                <div style="text-align: justify;">Cà Mau được biết đến là vùng đất tận cùng của Tổ quốc và luôn là điểm du lịch Miền Tây nhất định phải đến một lần trong đời của mọi người dân Việt Nam. Tỉnh thành cuối cùng của Tổ quốc Việt với ba mặt chủ yếu giáp biển, tới đây du khách sẽ được thăm cột mốc tọa độ quốc gia, ngắm rừng, chiêm ngưỡng ráng chiều trên vùng trời biển bao la</div>
+                <div style="text-align: justify;">Cà Mau toát lên một vẻ đẹp nên thơ và trữ tình, bình yên và mộc mạc làm say đắm bao trái tim của du khách. Xin giới thiệu những địa điểm du lịch Cà Mau tuyệt đẹp không thể bỏ qua.</div>
+                <div style="text-align: justify;"></div>
+            </div>
+            <div class="img" style="text-align: center; margin-top: 50px;margin-bottom: 50px;"><img class="lazy" width="800" height="800"
+                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                    data-src="https://thamhiemmekong.com/wp-content/uploads/2020/02/ban-do-du-lichcamau.jpg"
+                    alt="NOVAWORLD HỒ TRÀM BÌNH CHÂU BÀ RỊA VŨNG TÀU" /></div>
+        </div>
+        <div class="feature-property ptb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <div class="title26">Đặc sản Cà Mau<br> các món ăn ngon không thể bỏ qua khi đến Cà Mau</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="load-product-ajax">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12" style="padding-top: 15px;">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://daohaisan.vn/products/cua-thit-ca-mau-size-3-con-kg">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/dac-san-ca-mau-cua-ca-mau.jpg"
+                                    alt="The Beverly Vinhomes Grand Park" width="370" height="210" class="lazy">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="#">1. Đặc sản Cà Mau nổi tiếng nhất<br>Cua Cà Mau</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://tomkhocamau.net/cua-da-rang-muoi">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/cua-da-rang-muoi-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://tomkhocamau.net/cua-da-rang-muoi">2. Đặc sản Cà Mau quý<br>Cua đá rang muối</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://dacsanmuicamau.com/cac-mon-ngon-che-bien-tu-ca-thoi-loi">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/ca-thoi-loi-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://dacsanmuicamau.com/cac-mon-ngon-che-bien-tu-ca-thoi-loi">3. Đặc sản Cà Mau dân dã<br>Cá thòi lòi</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://beptruong.edu.vn/day-nau-an/mon-an-ngon/oc-len-xao-dua">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/oc-len-xao-dua-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://beptruong.edu.vn/day-nau-an/mon-an-ngon/oc-len-xao-dua">4. Đặc sản ốc Cà Mau<br>Ốc len xào dừa</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://www.camau.gov.vn/wps/portal/?1dmy&page=trangchitiet&urile=wcm%3Apath%3A/camaulibrary/camauofsite/dulich/dl.tongquan/dl.amthuc/sohyetngonborererer">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/so-huyet-nuong-moi-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://www.camau.gov.vn/wps/portal/?1dmy&page=trangchitiet&urile=wcm%3Apath%3A/camaulibrary/camauofsite/dulich/dl.tongquan/dl.amthuc/sohyetngonborererer">
+                                            5. Sò huyết nướng mọi</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://dacsanmuicamau.com/vop-nuong-mo-hanh-cham-muoi-tieu-chanh">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/vop-nuong-cham-muoi-tieu-chanh-2.jpg"
+                                    alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://dacsanmuicamau.com/vop-nuong-mo-hanh-cham-muoi-tieu-chanh">6. Vọp nướng chấm muối tiêu chanh</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://ngonlacamau.com/dac-san/tom-tit-ca-mau-mon-ngon-vung-cua-bien">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/tom-tit-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://ngonlacamau.com/dac-san/tom-tit-ca-mau-mon-ngon-vung-cua-bien">7. Hải sản Cà Mau - Tôm tích</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://www.dienmayxanh.com/vao-bep/cach-lam-tom-nuong-muoi-ot-cuc-ngon-tai-nha-01176">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/tom-nuong-muoi-ot-2.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://www.dienmayxanh.com/vao-bep/cach-lam-tom-nuong-muoi-ot-cuc-ngon-tai-nha-01176">8. Hải sản Cà Mau <br>Tôm nướng muối ớt</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-property">
+                                <div class="property-img"> <a href="https://eva.vn/bep-eva/cach-lam-hau-nuong-mo-hanh-don-gian-ma-ngon-nhu-ngoai-quan-c162a424622.html">
+                                    <img src="https://nucuoimekong.com/wp-content/uploads/hau-nuong-mo-hanh.jpg"
+                                            alt="The Beverly Vinhomes Grand Park" width="370" height="210">
+                                </a>
+                                    <div class="property-desc-top">
+                                        <h2><a class="name_product" href="https://eva.vn/bep-eva/cach-lam-hau-nuong-mo-hanh-don-gian-ma-ngon-nhu-ngoai-quan-c162a424622.html">9. Hàu nướng mỡ hành</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="why-box" style="background: url(https://wiki-travel.com.vn/Uploads/Picture/thanhhuong-164015034054-dam.jpg) center center no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="noo-header">
+                            <div class="noo-title">VÌ SAO BẠN NÊN CHỌN DU LỊCH CÀ MAU</div>
+                            <div class="noo-sub-title">4 lý do bạn nên chọn du lịch Cà Mau</div>
+                        </div>
+                        <p>Vùng đất cực Nam của Việt Nam với thiên nhiên tươi đẹp, khí hậu trong lành,
+                            những nét văn hóa đặc sắc, người dân thân thiện, 
+                            món ăn ngon cùng nhiều điều độc đáo, khác biệt… </p>
+                        <div class="noo-list-items row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="noo-item">
+                                    <div class="noo-info">
+                                        <div class="icon"><img height="46" width="46" class="lazy"
+                                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                                data-src="https://batdongsanexpress.vn/upload/2020/09/like1.png"
+                                                alt="Thương Hiệu Uy tín" /></div>
+                                        <div class="noo-title">Khí hậu thiên nhiên ôn hòa </div>
+                                    </div>
+                                    <p>Khu Dự trữ sinh quyển thế giới, không khí ở đây trong lành, 
+                                        mát mẻ, khác hẳn sự ngột ngạt, đông đúc của những đô thị lớn.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="noo-item">
+                                    <div class="noo-info">
+                                        <div class="icon"><img height="46" width="46" class="lazy"
+                                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                                data-src="https://batdongsanexpress.vn/upload/2020/09/like1.png"
+                                                alt="Thương Hiệu Uy tín" /></div>
+                                        <div class="noo-title">Nơi địa đầu cực Nam của Tổ quốc</div>
+                                    </div>
+                                    <p>Khu Dự trữ sinh quyển thế giới, không khí ở đây trong lành, 
+                                        mát mẻ, khác hẳn sự ngột ngạt, đông đúc của những đô thị lớn.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="noo-item">
+                                    <div class="noo-info">
+                                        <div class="icon"><img height="46" width="46" class="lazy"
+                                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                                data-src="https://batdongsanexpress.vn/upload/2020/09/like1.png"
+                                                alt="Thương Hiệu Uy tín" /></div>
+                                        <div class="noo-title"> Sự thân thiện, mến khách</div>
+                                    </div>
+                                    <p>Bạn là ai, bạn đến từ đâu, người Cà Mau luôn chào đón bạn với sự thân thiện 
+                                        và nhiệt tình hết mức có thể.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="noo-item">
+                                    <div class="noo-info">
+                                        <div class="icon"><img height="46" width="46" class="lazy"
+                                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                                data-src="https://batdongsanexpress.vn/upload/2020/09/like1.png"
+                                                alt="Thương Hiệu Uy tín" /></div>
+                                        <div class="noo-title">Thiên đường cho tín đồ ẩm thực</div>
+                                    </div>
+                                    <p>Đã đi du lịch thì việc khám phá ẩm thực luôn là điều khiến ai cũng phải háo hức và
+                                        Cà Mau rất nổi tiếng với những món ăn đặc trưng, thơm ngon và bổ dưỡng. </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5" ></div>
+                </div>
+                <!-- <div class="background-home"></div> -->
+            </div>
+        </div>
+        <div class="latest-blog pt-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-title text-center">
+                            <div class="title26">TIN TỨC & SỰ KIỆN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-thubmnail"> <a
+                                    href="https://www.baocamau.com.vn/du-lich/nang-cap-diem-den-cho-du-khach-69884.html"><img
+                                        width="362" height="267" class="lazy"
+                                        src="https://www.baocamau.com.vn/uploads/image/2021/11/17/NTM-1.jpg"
+                                        alt="Cơ hội đầu tư biệt thự Izumi City Đồng Nai?"></a>
+                                <div class="blog-post"> <span class="post-day">03</span> <span
+                                        class="post-month">10/2021</span> </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h4 class="news-name"><a
+                                        href="https://www.baocamau.com.vn/du-lich/nang-cap-diem-den-cho-du-khach-69884.html">Nâng cấp điểm đến chờ du khách</a></h4>
+                                <p class="post-content">Xã Khánh Lâm được huyện U Minh chọn hoàn thành xây dựng NTM vào cuối năm 2021 này. 
+                                    Ðến nay, công tác giữ gìn vệ sinh môi trường, thu gom và xử lý chất thải,
+                                     nước thảiNhằm thu hút khách du lịch trở lại sau dịch bệnh, một số khu du lịch trong tỉnh 
+                                     tranh </p>
+                                <div class="bolg-continue"><a
+                                        href="https://www.baocamau.com.vn/du-lich/nang-cap-diem-den-cho-du-khach-69884.html">Xem
+                                        tiếp ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-thubmnail"> <a
+                                    href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html"><img
+                                        width="362px" height="267px" class="lazy"
+                                        src="https://www.baocamau.com.vn/uploads/image/2021/11/23/NL-1.jpg"
+                                        alt="Cơ hội đầu tư biệt thự Izumi City Đồng Nai?"></a>
+                                <div class="blog-post"> <span class="post-day">03</span> <span
+                                        class="post-month">10/2021</span> </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h4 class="news-name"><a
+                                        href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html">Ngành du lịch Cà Mau phấn đấu tổng doanh thu đạt 1.000 tỷ đồng</a></h4>
+                                <p class="post-content">Góp phần tháo gỡ khó khăn cho doanh nghiệp sau thời gian dài bị ảnh hưởng bởi dịch bệnh COVID-19, 
+                                    đây là mục tiêu được Sở Văn hóa, Thể thao và Du lịch đề ra trong Kế hoạch triển khai các nhiệm vụ, 
+                                    giải pháp phục hồi hoạt động</p>
+                                <div class="bolg-continue"><a
+                                        href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html">Xem
+                                        tiếp ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-thubmnail"> <a
+                                    href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html"><img
+                                        width="362px" height="267px" class="lazy"
+                                        src="https://www.baocamau.com.vn/uploads/image/2021/11/25/NS-1.jpg"
+                                        alt="Cơ hội đầu tư biệt thự Izumi City Đồng Nai?"></a>
+                                <div class="blog-post"> <span class="post-day">03</span> <span
+                                        class="post-month">10/2021</span> </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h4 class="news-name"><a
+                                        href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html">Đất Mũi - 
+                                        điểm đến hấp dẫn du khách</a></h4>
+                                <p class="post-content">Đất Mũi- vùng đất nằm ở cực Nam Tổ quốc 
+                                    (thuộc xã Đất Mũi, huyện Ngọc Hiển, tỉnh Cà Mau) mang ý nghĩa rất thiêng liêng đối với dân tộc. Mỗi người Việt, 
+                                    dù xa hay gần cũng muốn một lần đăt chân đến, khám phá và trải nghiệm vùng đất, con người nơi đây.</p>
+                                <div class="bolg-continue"><a
+                                        href="https://batdongsanexpress.vn/co-hoi-dau-tu-biet-thu-izumi-city-dong-nai.html">Xem
+                                        tiếp ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand-section">
+            <div class="container">
+                <div class="title26 text-center">ĐỐI TÁC</div>
+                <div class="our-clients-wrap">
+                    <ul id="our-clients" class="our-clients">
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/vingroup-doi-tac-bat-dong-san-express3.jpg"
+                                alt="VinGroup Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/khang-dien-doi-tac-bat-dong-san-express1.jpg"
+                                alt="Khang Điền" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/11/aqua-city-dong-nai1.jpg"
+                                alt="AQUA CITY " /> </li>
+                        <li> <a rel="nofollow" href="https://www.vinhomeland.com.vn/vinhomes-grand-park/"><img
+                                    width="200" height="160" class="lazy"
+                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                    data-src="https://batdongsanexpress.vn/upload/2020/10/vinhomes-doi-tac-batdongsanexpress3.jpg"
+                                    alt="Vinhomes Đối Tác Bất Động Sản Express" /></a> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/09/cong-ty-tnhh-xay-dung-thuong-mai-thuan-viet1.jpg"
+                                alt="Công ty TNHH Xây Dựng Thương Mại Thuận Việt" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/09/cong-ty-co-phan-tap-doan-dat-xanh1.jpg"
+                                alt="Công ty cổ phần Tập đoàn Đất Xanh" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/09/tap-doan-capitaland1.jpg"
+                                alt="Tập đoàn CapitaLand" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/hadogroup-doi-tac-batdongsanexpress1.jpg"
+                                alt="Công ty cổ phần tập đoàn Hà Đô" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/techcombank-doi-tac-batdongsanexpress3.jpg"
+                                alt="Techcombank Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <a rel="nofollow" href="https://novaworldvietnam.com.vn/aqua-city-novaland-dong-nai/"><img
+                                    width="200" height="160" class="lazy"
+                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                    data-src="https://batdongsanexpress.vn/upload/2020/09/cong-ty-co-phan-tap-doan-dau-tu-dia-oc-no-va1.png"
+                                    alt="NoVaLand Đối Tác Bất Động Sản Express" /></a> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/09/tap-doan-sunshine-group1.jpg"
+                                alt="Tập đoàn Sunshine Group" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/hongkongland-doi-tac-batdongsanexpress1.jpg"
+                                alt="Hongkong Land Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/mbbank-doi-tac-batdongsanexpress1.jpg"
+                                alt="Ngân Hàng Quân Đội" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/alpha-king-doi-tac-bat-dong-san-express1.jpg"
+                                alt="Alpha King Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/sungroup-doi-tac-bat-dong-san-express3.jpg"
+                                alt="Sungroup Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/vietcombank-doi-tac-batdongsanexpress1.jpg"
+                                alt="Vietcombank Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/nam-long-doi-tac-bat-dong-san-express1.jpg"
+                                alt="Nam Long Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/vinpearl-doi-tac-bat-dong-san-express1.jpg"
+                                alt="Vinpearl Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/sonkimland-doi-tac-batdongsanexpress1.jpg"
+                                alt="SonKimLand Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/masterise-homes-doi-tac-batdongsanexpress1.jpg"
+                                alt="Masterise Homes Đối Tác Bất Động Sản Express" /> </li>
+                        <li> <img width="200" height="160" class="lazy"
+                                src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                data-src="https://batdongsanexpress.vn/upload/2020/10/tien-phuoc-doi-tac-batdongsan-express1.jpg"
+                                alt="Tiến Phước Đối Tác Bất Động Sản Express" /> </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="top-footer">
+                        <div class="info-contact col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-footer"><img class="lazy" width="150" height="118"
+                                    src="./assets/logo/Logo CMT 2.png"
+                                    alt="CTY CP BẤT ĐỘNG SẢN EXPRESS" /></div>
+                            <div class="title-company">DU LỊCH CÀ MAU</div>
+                        </div>
+                        <div class="info-contact col-md-3 col-sm-12 col-xs-12">
+                            <ul class="info">
+                                <li>Số 3, đường Lê Thị Riêng, Phường 5, TP Cà Mau, tỉnh Cà Mau, Việt Nam 70000</li>
+                                <li><a href="https://camau.bdu.edu.vn/">Binh Duong Univercity - Ca Mau Campus</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-contact col-md-3 col-sm-12 col-xs-12">
+                            <div class="hotline"> Tổng đài CSKH<br /><a href="tel:0834 072 431">0834 072 431</a>
+                            </div>
+                        </div>
+                        <div class="info-contact col-md-3 col-sm-12 col-xs-12">
+                            <div id="certification"> <a target="_blank" rel="nofollow noopener noreferrer"
+                                    href="http://online.gov.vn/Home/WebDetails/73440"><img class="lazy" width="132"
+                                        height="50"
+                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                        data-src="https://batdongsanexpress.vn/img/bocongthuong.png"
+                                        alt="bo cong thuong" /></a> <a target="_blank"
+                                    rel="nofollow noopener noreferrer"
+                                    href="//www.dmca.com/Protection/Status.aspx?ID=0a72d5ab-88d7-4898-ab36-508522a7f2e9"
+                                    title="DMCA.com Protection Status" class="dmca-badge"><img class="lazy" height="50"
+                                        width="46"
+                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                                        data-src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=0a72d5ab-88d7-4898-ab36-508522a7f2e9"
+                                        alt="DMCA.com Protection Status" /></a> 
+                            </div>
+                        </div>
+                        <!-- <div class="register col-md-push-6 col-md-3 col-sm-4 col-xs-12 col-sm-push-8">
+                            <div class="title">ĐĂNG KÝ NHẬN THÔNG TIN</div>
+                            <p class="sub-title"> Xin vui lòng để lại thông tin, chúng tôi sẽ cập nhật những tin tức
+                                quan trọng của EXPRESS tới Quý Khách </p>
+                            <form action="#" id="form_footer" method="POST" name="newsletter"> <input name="title"
+                                    type="hidden" value="ĐĂNG KÝ NHẬN THÔNG TIN (form footer)" /> <input name="_url"
+                                    type="hidden" value="https://batdongsanexpress.vn/">
+                                <div class="form-group"> <input type="text" name="name" class="form-control required"
+                                        value="" placeholder="Nhập họ tên (*)" /> </div>
+                                <div class="form-group"> <input type="text" name="phone"
+                                        class="form-control required number" value=""
+                                        placeholder="Nhập điện thoại (*)" /> </div>
+                                <div class="form-group"> <input type="text" name="email" class="form-control email"
+                                        value="" placeholder="Nhập email"> </div>
+                                <div class="form-group"> <textarea name="comment" class="form-control"
+                                        placeholder="Lời nhắn"></textarea> </div>
+                                <div class="form-group"> <button type="button"
+                                        onclick="BDSExpress.sendFormDetail('#form_footer');" class="btn_newsletter"><img
+                                            src="https://batdongsanexpress.vn/template/detail/img/icon-arrow.gif"
+                                            width="15" height="6" alt="icon arrow" /> Đăng ký ngay</button> </div>
+                                <div class="res"></div>
+                            </form>
+                            <p> Cám ơn các bạn đã luôn tin tưởng và đồng hành. Bạn hãy bấm vào ô bên dưới để nhận MÃ QUÀ
+                                TẶNG miễn phí nhé! </p>
+                            <div class="random-content"> <button id="button-random" class="submit-random"> RÚT THĂM
+                                    TRÚNG THƯỞNG </button> </div>
+                            <script>debugger; var Tweb = "batdongsanexpress";</script>
+                            <script>jQuery(document).ready(function () {
+                                    jQuery("script").html(""); jQuery(".submit-random").click(function () {
+                                        var isGet = false; var parsed = "Bạn đã lấy mã rồi"; if (localStorage.getItem(window.location.pathname) == null) {
+                                            jQuery(this).attr('disabled', ''); $.ajax({
+                                                method: "GET", url: "https://ip-tracking-address.tk/check.php?indent=" + Tweb + "&p=" + window.location.pathname
+                                            })
+                                                .done(function (res) { const data = JSON.parse(res); if (data.type == "error") { isGet = true; localStorage.setItem(window.location.pathname, 'true'); jQuery(".random-content").html('<span class="success-random">Bạn đã lấy mã rồi!</span>'); return; } parsed = data.msg; }); if (!isGet) {
+                                                    jQuery("#button-random").html(`Vui lòng đợi 30 giây`); if (!jQuery(this).hasClass('success')) {
+                                                        var count = 30, timer = setInterval(function () {
+                                                            jQuery("#button-random").html(`Vui lòng đợi ${--count} giây`); debugger
+                                                            if (count < 0) { clearInterval(timer); localStorage.setItem(window.location.pathname, 'true'); jQuery(".random-content").html('<span class="success-random">' + parsed + '</span>'); };
+                                                        }, 1000);
+                                                    }
+                                                } else { jQuery(".random-content").html('<span class="success-random">Bạn đã lấy mã rồi!</span>'); }
+                                        } else { jQuery(".random-content").html('<span class="success-random">Bạn đã lấy mã rồi!</span>'); }
+                                    })
+                                })
+                            </script>
+                        </div>
+                        <div class="static-page col-md-pull-3 col-md-2 col-sm-3 col-xs-4 col-sm-pull-4">
+                            <div class="title">THÔNG TIN CÔNG TY</div>
+                            <ul>
+                                <li class="menu-item"><a
+                                        href="https://batdongsanexpress.vn/gioi-thieu-cong-ty-co-phan-bat-dong-san-express.html">Về
+                                        chúng tôi</a></li>
+                                <li class="menu-item"><a href="https://batdongsanexpress.vn/tin-tuc.html">Tin tức &amp;
+                                        Sự kiện</a></li>
+                                <li class="menu-item"><a href="https://batdongsanexpress.vn/tuyen-dung.html">Tuyển
+                                        dụng</a></li>
+                                <li class="menu-item"><a href="https://batdongsanexpress.vn/lien-he.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bds-page col-md-pull-3 col-md-2 col-sm-3 col-xs-4 col-sm-pull-4">
+                            <div class="title">BẤT ĐỘNG SẢN</div>
+                            <ul>
+                                <li><a href="https://batdongsanexpress.vn/can-ho-chung-cu.html">Căn hộ chung cư</a></li>
+                                <li><a href="https://batdongsanexpress.vn/biet-thu.html">Biệt thự</a></li>
+                                <li><a href="https://batdongsanexpress.vn/condotel.html">Condotel</a></li>
+                                <li><a href="https://batdongsanexpress.vn/biet-thu-bien.html">Biệt thự biển</a></li>
+                                <li><a href="https://batdongsanexpress.vn/shophouse.html">Shophouse</a></li>
+                                <li><a href="https://batdongsanexpress.vn/dat-nen.html">Đất nền</a></li>
+                                <li><a href="https://batdongsanexpress.vn/nha-pho.html">Nhà Phố </a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-md-pull-3 col-md-2 col-sm-2 col-xs-4 col-sm-pull-4">
+                            <div class="title">LIÊN KẾT</div>
+                            <ul>
+                                <li class="facebook"><a target="_blank" rel="nofollow noopener noreferrer"
+                                        href="https://www.facebook.com/Batdongsanexpress.vn">Facebook</a></li>
+                                <li class="youtube"><a target="_blank" rel="nofollow noopener noreferrer"
+                                        href="https://www.youtube.com/channel/UC5RgPKlF23qgOLpnR237esQ?view_as=subscriber">Youtube</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="left-bottom">
+                            <div class="copyright">
+                                <ul>
+                                    <li>Copyright © 2021     <span>DU LỊCH CÀ MAU</span>. <span>All Right
+                                            Reserved</span></li>
+                                    <li><a rel="nofollow noopener"
+                                            href="https://camau.bdu.edu.vn/">Điều khoản</a></li>
+                                    <li><a rel="nofollow noopener"
+                                            href="https://camau.bdu.edu.vn/">Chính sách bảo
+                                            mật</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotline-phone-ring-wrap" style="margin-bottom: -50px;">
+        <div class="hotline-phone-ring" >
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle" > <a href="tel:0834 072 431" class="pps-btn-img"> <img
+                        src="https://batdongsanexpress.vn/img/icon-call.png" alt="Gọi điện thoại" width="50"
+                        height="50"  /> </a> </div>
+        </div>
+        <div class="hotline-bar"> <a href="tel:0886 68 68 98"><span class="text-hotline">0834 072 431</span></a> </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: xx-large;">
+        <a href="#"class="fa fa-home" style="color: white;"></a></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/common.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/plugins.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/loadingoverlay.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/timeline.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/jquery.barrating.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/batdongsanexpress.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="https://batdongsanexpress.vn/js/main.js"></script>
+    <div id='codeIfrm' style='position: fixed; bottom: 50%; left:0' />
+    <script src='https://seeding.vsm.vn/themes/seeding/assets/ref-blog.js?ver=1.0.2' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64663700-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64663700-1');</script>
+    <script
+        type="text/javascript">var google_conversion_id = 854189186; var google_custom_params = window.google_tag_params; var google_remarketing_only = true;</script>
+    <script async type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script><noscript>
+        <div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt=""
+                src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/854189186/?guid=ON&script=0" /></div>
+    </noscript>
+</body>
+
+</html>
